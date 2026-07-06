@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Smart Blood Bank Management System</title>
 
-<link rel="stylesheet" href="login.css">
-
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
 <div class="login-container">
 
-<h1>Smart Blood Bank Management System</h1>
+    <h1>Smart Blood Bank Management System</h1>
 
-<h2>Login</h2>
+    <h2>Login</h2>
 
-<form action="hospital-dashboard.html">
+    <form id="loginForm">
 
-<label>Email</label>
-<input type="email" placeholder="Enter Email" required>
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
 
-<label>Password</label>
-<input type="password" placeholder="Enter Password" required>
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
 
-<label>Login As</label>
+        <label>Login As</label>
 
-<select required>
+        <select id="userType" required>
 
-<option value="">Select User Type</option>
+            <option value="">Select User Type</option>
 
-<option>Admin</option>
+            <option value="admin">Admin</option>
 
-<option>Hospital</option>
+            <option value="hospital">Hospital</option>
 
-<option>Blood Bank</option>
+            <option value="bloodbank">Blood Bank</option>
 
-<option>NGO</option>
+            <option value="ngo">NGO</option>
 
-<option>Donor</option>
+            <option value="donor">Donor</option>
 
-<option>Patient</option>
+            <option value="patient">Patient / Receiver</option>
 
-</select>
+        </select>
 
-<button type="submit">Login</button>
+        <button type="submit">Login</button>
 
-<p>
-Don't have an account?
-<a href="register.html">Register Here</a>
-</p>
+        <p>
+            Don't have an account?
+            <a href="register.html">Register Here</a>
+        </p>
 
-</form>
+    </form>
 
 </div>
+
+<script src="login.js"></script>
 
 </body>
 </html>
