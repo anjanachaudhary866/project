@@ -1,0 +1,108 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width:260px;
+background:#b30000;
+color:white;
+min-height:100vh;
+padding:20px;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar ul li{
+margin:12px 0;
+}
+
+.sidebar ul li a{
+color:white;
+text-decoration:none;
+display:block;
+padding:10px;
+border-radius:5px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+background:white;
+color:#b30000;
+}
+
+.main{
+flex:1;
+padding:30px;
+}
+
+.topbar{
+margin-bottom:30px;
+}
+
+.topbar h1{
+color:#b30000;
+}
+
+.profile-card{
+background:white;
+display:flex;
+gap:40px;
+padding:30px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.profile-image img{
+width:170px;
+height:170px;
+border-radius:50%;
+border:5px solid #b30000;
+}
+
+.profile-details{
+flex:1;
+}
+
+.profile-details table{
+width:100%;
+border-collapse:collapse;
+}
+
+.profile-details td{
+padding:12px;
+border-bottom:1px solid #ddd;
+font-size:17px;
+}
+
+.profile-details button{
+margin-top:25px;
+padding:12px 30px;
+background:#b30000;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+.profile-details button:hover{
+background:#8b0000;
+}
